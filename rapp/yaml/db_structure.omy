@@ -1,0 +1,289 @@
+dbname:
+    - { val: geointime,onoff: 11 }
+    - { val: geo_fence,onoff: 11 }
+    - { val: geo_attendance,onoff: 11 }
+    - { val: ,onoff: 11 }
+table:
+    - { val: role,onoff: 11 }
+    - { val: portal_role,onoff: 11 }
+    - { val: team,onoff: 11 }
+    - { val: user,onoff: 11 }
+    - { val: portal,onoff: 11 }
+    - { val: campaign,onoff: 11 }
+    - { val: contact,onoff: 11 }
+    - { val: mobileebr,onoff: 11 }
+    - { val: emailebr,onoff: 11 }
+    - { val: addressebr,onoff: 11 }
+    - { val: geolocationebr,onoff: 11 }
+
+    - { val: organisation,onoff: 11 }
+
+    - { val: ,onoff: 11 }
+comonCn:
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: 1role }
+    - { val: name,type: varchar(150),def: ,onoff: 1,tn: 1role }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: 1role }
+    - { val: utdate,type: datetime,def: ,onoff: 1,tn: 1role }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: 1role }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: 1role }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: 1role }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: 1role }
+        
+geointime:
+#espo db
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: portal_role }
+    - { val: name,type: varchar(150),def: ,onoff: 1,tn: portal_role }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: portal_role }
+    - { val: data,type: longtext,def: ,onoff: 1,tn: portal_role }
+    - { val: field_data,type: longtext,def: ,onoff: 1,tn: portal_role }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: portal_role }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: portal_role }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: portal_role }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: portal_role }
+
+
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: role }
+    - { val: name,type: varchar(150),def: ,onoff: 1,tn: role }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: role }
+    - { val: assignment_permission,type: varchar(255),def: not-set,onoff: 1,tn: role }
+    - { val: user_permission,type: varchar(255),def: not-set,onoff: 1,tn: role }
+    - { val: portal_permission,type: varchar(255),def: not-set,onoff: 1,tn: role }
+    - { val: group_email_account_permission,type: varchar(255),def: not-set,onoff: 1,tn: role }
+    - { val: data_privacy_permission,type: varchar(255),def: not-set,onoff: 1,tn: role }
+    - { val: data,type: longtext,def: ,onoff: 1,tn: role }
+    - { val: field_data,type: longtext,def: ,onoff: 1,tn: role }
+    - { val: transaction_id,type: varchar(99),def: ,onoff: 1,tn: role }
+    - { val: user_id,type: varchar(99),def: ,onoff: 1,tn: role }
+    - { val: organisation_id,type: varchar(99),def: ,onoff: 1,tn: role }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: role }
+
+
+
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: team }
+    - { val: name,type: varchar(100),def: ,onoff: 1,tn: team }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: team }
+    - { val: position_list,type: longtext,def: ,onoff: 1,tn: team }
+    - { val: created_at,type: datetime,def: ,onoff: 1,tn: team }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: team }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: team }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: team }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: team }
+
+
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: user }
+    - { val: u_acccount,type: varchar(99),def: ,onoff: 1,tn: user }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: user }
+    - { val: is_admin,type: tinyint(1),def: 0,onoff: 1,tn: user }
+    - { val: user_name,type: varchar(50),def: ,onoff: 1,tn: user }
+    - { val: password,type: varchar(150),def: ,onoff: 1,tn: user }
+    - { val: salutation_name,type: varchar(255),def: ,onoff: 1,tn: user }
+    - { val: first_name,type: varchar(100),def: ,onoff: 1,tn: user }
+    - { val: last_name,type: varchar(100),def: ,onoff: 1,tn: user }
+    - { val: mother_name,type: varchar(100),def: ,onoff: 1,tn: user }
+    - { val: father_name,type: varchar(100),def: ,onoff: 1,tn: user }
+    - { val: aadhaar_num,type: varchar(60),def: ,onoff: 1,tn: user }
+    - { val: date_of_birth,type: datetime,def: ,onoff: 1,tn: user }
+    - { val: gender,type: bigint(18),def: ,onoff: 1,tn: user }
+    - { val: u_logo,type: varchar(150),def: ,onoff: 1,tn: user }
+    - { val: u_title,type: varchar(60),def: ,onoff: 1,tn: user }
+    - { val: u_category,type: bigint(18),def: ,onoff: 1,tn: user }
+    - { val: is_active,type: tinyint(1),def: 1,onoff: 1,tn: user }
+    - { val: is_portal_user,type: tinyint(1),def: 0,onoff: 1,tn: user }
+    - { val: is_super_admin,type: tinyint(1),def: 0,onoff: 1,tn: user }
+    - { val: title,type: varchar(100),def: ,onoff: 1,tn: user }
+    - { val: created_at,type: datetime,def: ,onoff: 1,tn: user }
+    - { val: default_team_id,type: varchar(99),def: ,onoff: 1,tn: user }
+    - { val: contact_id,type: varchar(99),def: ,onoff: 1,tn: user }
+    - { val: avatar_id,type: varchar(99),def: ,onoff: 1,tn: user }
+    - { val: udate,type: datetime,def: ,onoff: 1,tn: user }
+    - { val: last_login,type: datetime,def: ,onoff: 1,tn: user }
+    - { val: last_update,type: datetime,def: ,onoff: 1,tn: user }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: user }
+    - { val: created_by_id,type: varchar(99),def: '',onoff: 1,tn: user }
+    - { val: reference_by_id,type: varchar(99),def: '',onoff: 1,tn: user }
+    - { val: modified_by_id,type: varchar(99),def: '',onoff: 1,tn: user }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: user }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: user }
+
+
+
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: portal }
+    - { val: name,type: varchar(100),def: ,onoff: 1,tn: portal }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: portal }
+    - { val: is_active,type: tinyint(1),def: 1,onoff: 1,tn: portal }
+    - { val: tab_list,type: longtext,def: ,onoff: 1,tn: portal }
+    - { val: quick_create_list,type: longtext,def: ,onoff: 1,tn: portal }
+    - { val: theme,type: varchar(255),def: ,onoff: 1,tn: portal }
+    - { val: language,type: varchar(255),def: ,onoff: 1,tn: portal }
+    - { val: time_zone,type: varchar(255),def: ,onoff: 1,tn: portal }
+    - { val: date_format,type: varchar(255),def: ,onoff: 1,tn: portal }
+    - { val: time_format,type: varchar(255),def: ,onoff: 1,tn: portal }
+    - { val: week_start,type: int(11),def: -1,onoff: 1,tn: portal }
+    - { val: default_currency,type: varchar(255),def: ,onoff: 1,tn: portal }
+    - { val: dashboard_layout,type: longtext,def: ,onoff: 1,tn: portal }
+    - { val: dashlets_options,type: longtext,def: ,onoff: 1,tn: portal }
+    - { val: modified_at,type: datetime,def: ,onoff: 1,tn: portal }
+    - { val: created_at,type: datetime,def: ,onoff: 1,tn: portal }
+    - { val: modified_by_id,type: varchar(99),def: ,onoff: 1,tn: portal }
+    - { val: created_by_id,type: varchar(99),def: ,onoff: 1,tn: portal }
+    - { val: logo_id,type: varchar(99),def: ,onoff: 1,tn: portal }
+    - { val: company_logo_id,type: varchar(99),def: ,onoff: 1,tn: portal }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: portal }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: portal }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: portal }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: portal }    
+    
+
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: campaign }
+    - { val: name,type: varchar(255),def: ,onoff: 1,tn: campaign }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: campaign }
+    - { val: status,type: varchar(255),def: Planning,onoff: 1,tn: campaign }
+    - { val: type,type: varchar(255),def: Email,onoff: 1,tn: campaign }
+    - { val: start_date,type: date,def: ,onoff: 1,tn: campaign }
+    - { val: end_date,type: date,def: ,onoff: 1,tn: campaign }
+    - { val: description,type: longtext,def: ,onoff: 1,tn: campaign }
+    - { val: created_at,type: datetime,def: ,onoff: 1,tn: campaign }
+    - { val: modified_at,type: datetime,def: ,onoff: 1,tn: campaign }
+    - { val: budget,type: double,def: ,onoff: 1,tn: campaign }
+    - { val: budget_currency,type: varchar(255),def: ,onoff: 1,tn: campaign }
+    - { val: created_by_id,type: varchar(99),def: ,onoff: 1,tn: campaign }
+    - { val: modified_by_id,type: varchar(99),def: ,onoff: 1,tn: campaign }
+    - { val: assigned_user_id,type: varchar(99),def: ,onoff: 1,tn: campaign }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: campaign }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: campaign }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: campaign }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: campaign }    
+    
+
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: contact }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: contact }
+    - { val: salutation_name,type: varchar(255),def: ,onoff: 1,tn: contact }
+    - { val: first_name,type: varchar(100),def: ,onoff: 1,tn: contact }
+    - { val: last_name,type: varchar(100),def: ,onoff: 1,tn: contact }
+    - { val: account_id,type: varchar(99),def: ,onoff: 1,tn: contact }
+    - { val: description,type: longtext,def: ,onoff: 1,tn: contact }
+    - { val: do_not_call,type: tinyint(1),def: 0,onoff: 1,tn: contact }
+    - { val: address_street,type: varchar(255),def: ,onoff: 1,tn: contact }
+    - { val: address_city,type: varchar(255),def: ,onoff: 1,tn: contact }
+    - { val: address_state,type: varchar(255),def: ,onoff: 1,tn: contact }
+    - { val: address_country,type: varchar(255),def: ,onoff: 1,tn: contact }
+    - { val: address_postal_code,type: varchar(255),def: ,onoff: 1,tn: contact }
+    - { val: created_at,type: datetime,def: ,onoff: 1,tn: contact }
+    - { val: modified_at,type: datetime,def: ,onoff: 1,tn: contact }
+    - { val: campaign_id,type: varchar(99),def: ,onoff: 1,tn: contact }
+    - { val: created_by_id,type: varchar(99),def: ,onoff: 1,tn: contact }
+    - { val: modified_by_id,type: varchar(99),def: ,onoff: 1,tn: contact }
+    - { val: assigned_user_id,type: varchar(99),def: ,onoff: 1,tn: contact }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: 1role }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: 1role }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: 1role }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: 1role }    
+    
+    
+
+
+#om db
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: organisation }
+    - { val: pid,type: bigint(99),def: ,onoff: 1,tn: organisation }
+    - { val: o_name,type: varchar(150),def: ,onoff: 1,tn: organisation }
+    - { val: organizer_name,type: varchar(150),def: ,onoff: 1,tn: organisation }
+    - { val: financial_year,type: date,def: ,onoff: 1,tn: organisation }
+    - { val: books_beging,type: date,def: ,onoff: 1,tn: organisation }
+    - { val: accounting_yera,type: date,def: ,onoff: 1,tn: organisation }
+    - { val: o_slogan,type: varchar(150),def: ,onoff: 1,tn: organisation }
+    - { val: o_alias,type: varchar(150),def: ,onoff: 1,tn: organisation }
+    - { val: o_logo,type: varchar(90),def: ,onoff: 1,tn: organisation }
+    - { val: o_code,type: varchar(90),def: ,onoff: 1,tn: organisation }
+    - { val: o_abbr,type: varchar(60),def: ,onoff: 1,tn: organisation }
+    - { val: cst_number,type: varchar(60),def: ,onoff: 1,tn: organisation }
+    - { val: tin_number,type: varchar(60),def: ,onoff: 1,tn: organisation }
+    - { val: reg_number,type: varchar(60),def: ,onoff: 1,tn: organisation }
+    - { val: gst_number,type: varchar(60),def: ,onoff: 1,tn: organisation }
+    - { val: pan_number,type: varchar(60),def: ,onoff: 1,tn: organisation }
+    - { val: remark,type: varchar(60),def: ,onoff: 1,tn: organisation }
+    - { val: status,type: varchar(60),def: ,onoff: 1,tn: organisation }
+    - { val: ebr_type,type: varchar(66),def: ,onoff: 1,tn: organisation }
+    - { val: ebr_id,type: bigint(99),def: ,onoff: 1,tn: organisation }
+    - { val: udate,type: datetime,def: ,onoff: 1,tn: organisation }
+    - { val: hint,type: varchar(90),def: ,onoff: 1,tn: organisation }
+    - { val: is_default,type: tinyint(1),def: 0,onoff: 1,tn: organisation }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: organisation }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: organisation }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: organisation }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: organisation }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: organisation }
+
+
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: addressebr }
+    - { val: address_type,type: bigint(18),def: ,onoff: 1,tn: addressebr }
+    - { val: street,type: varchar(60),def: ,onoff: 1,tn: addressebr }
+    - { val: village,type: varchar(60),def: ,onoff: 1,tn: addressebr }
+    - { val: tehsil,type: varchar(60),def: ,onoff: 1,tn: addressebr }
+    - { val: district,type: varchar(60),def: ,onoff: 1,tn: addressebr }
+    - { val: sambhag,type: varchar(60),def: ,onoff: 1,tn: addressebr }
+    - { val: pincode,type: varchar(40),def: ,onoff: 1,tn: addressebr }
+    - { val: state,type: varchar(60),def: ,onoff: 1,tn: addressebr }
+    - { val: country,type: varchar(60),def: ,onoff: 1,tn: addressebr }
+    - { val: address_logo,type: varchar(90),def: ,onoff: 1,tn: addressebr }
+    - { val: is_prime,type: tinyint(1),def: 0,onoff: 1,tn: addressebr }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: addressebr }
+    - { val: utdate,type: datetime,def: ,onoff: 1,tn: addressebr }
+    - { val: hint,type: varchar(90),def: ,onoff: 1,tn: addressebr }
+    - { val: ebr_type,type: varchar(90),def: ,onoff: 1,tn: addressebr }
+    - { val: ebr_id,type: varchar(99),def: ,onoff: 1,tn: addressebr }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: addressebr }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: addressebr }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: addressebr }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: addressebr }
+
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: emailebr }
+    - { val: email_ac,type: varchar(99),def: ,onoff: 1,tn: emailebr }
+    - { val: email_type,type: bigint(18),def: ,onoff: 1,tn: emailebr }
+    - { val: is_prime,type: tinyint(1),def: 0,onoff: 1,tn: emailebr }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: emailebr }
+    - { val: utdate,type: datetime,def: ,onoff: 1,tn: emailebr }
+    - { val: hint,type: varchar(90),def: ,onoff: 1,tn: emailebr }
+    - { val: ebr_type,type: varchar(90),def: ,onoff: 1,tn: emailebr }
+    - { val: ebr_id,type: varchar(99),def: ,onoff: 1,tn: emailebr }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: emailebr }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: emailebr }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: emailebr }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: emailebr }
+
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: geolocationebr }
+    - { val: geolocation_type,type: bigint(18),def: ,onoff: 1,tn: geolocationebr }
+    - { val: latitude,type: varchar(60),def: ,onoff: 1,tn: geolocationebr }
+    - { val: longitude,type: varchar(60),def: ,onoff: 1,tn: geolocationebr }
+    - { val: accuracy,type: varchar(60),def: ,onoff: 1,tn: geolocationebr }
+    - { val: geometry,type: longtext,def: ,onoff: 1,tn: geolocationebr }
+    - { val: centre,type: varchar(150),def: ,onoff: 1,tn: geolocationebr }
+    - { val: altitude,type: varchar(60),def: ,onoff: 1,tn: geolocationebr }
+    - { val: altitude_accuracy,type: varchar(60),def: ,onoff: 1,tn: geolocationebr }
+    - { val: heading,type: varchar(40),def: ,onoff: 1,tn: geolocationebr }
+    - { val: remark,type: varchar(100),def: ,onoff: 1,tn: geolocationebr }
+    - { val: is_prime,type: tinyint(1),def: 0,onoff: 1,tn: geolocationebr }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: geolocationebr }
+    - { val: utdate,type: datetime,def: ,onoff: 1,tn: geolocationebr }
+    - { val: hint,type: varchar(90),def: ,onoff: 1,tn: geolocationebr }
+    - { val: ebr_type,type: varchar(99),def: ,onoff: 1,tn: geolocationebr }
+    - { val: ebr_id,type: varchar(99),def: ,onoff: 1,tn: geolocationebr }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: geolocationebr }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: geolocationebr }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: geolocationebr }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: geolocationebr }
+
+    - { val: id,type: varchar(99),def: ,onoff: 1,tn: mobileebr }
+    - { val: mobile_number,type: varchar(60),def: ,onoff: 1,tn: mobileebr }
+    - { val: mobile_type,type: varchar(99),def: ,onoff: 1,tn: mobileebr }
+    - { val: is_prime,type: tinyint(1),def: 0,onoff: 1,tn: mobileebr }
+    - { val: ebr_type,type: varchar(66),def: ,onoff: 1,tn: mobileebr }
+    - { val: ebr_id,type: varchar(99),def: ,onoff: 1,tn: mobileebr }
+    - { val: utdate,type: datetime,def: ,onoff: 1,tn: mobileebr }
+    - { val: hint,type: varchar(90),def: ,onoff: 1,tn: mobileebr }
+    - { val: is_on,type: tinyint(1),def: 1,onoff: 1,tn: mobileebr }
+    - { val: transaction_id,type: varchar(99),def: '',onoff: 1,tn: mobileebr }
+    - { val: user_id,type: varchar(99),def: '',onoff: 1,tn: mobileebr }
+    - { val: organisation_id,type: varchar(99),def: '',onoff: 1,tn: mobileebr }
+    - { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: 1,tn: mobileebr }
+
+    - {  val: ,type: varchr(99),def: ,onoff: 1,tn:  }

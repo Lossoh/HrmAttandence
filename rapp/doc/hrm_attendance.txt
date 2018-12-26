@@ -1,0 +1,324 @@
+/*om*/
+Business Goals & Objectives
+	Vision
+		The vision of GeoInTIME project is to provide an highly efficient and completely automated attendance tracking system for small and medium enterprises, by March 2019.
+	Goal
+		No Additional Hardware
+		No Human Interference
+		Excellent User Experience
+		Dirt Cheap Cost
+		Scalable Architecture
+		Easy System Administration
+	Objectives
+		Real-time Attendance Tracking
+		Technology selection to use existing hardware
+		Technology selection to use location for service
+		Make necessary interfaces available for data integration
+		Build checkpoints for data validation
+		Customizable analytics and dashboard
+		Efficient and traceable Data Storage
+
+Process Flow
+Subscription Plan
+    Free
+    Demo
+    Small org
+    Medium org
+    Large org
+    Single subscription
+    Multiple subscriptions
+    Api subscriptions
+    Metered billing
+    One Time billing
+Technologies
+	Web
+		NodeJS
+		MySql
+		MongoDB
+		JavaScript
+		JQuery
+		HTML
+		CSS
+		DataTable
+	Mobile
+		Android
+			Java
+			Sqlite
+			Api
+		IOS
+		    Xamarin
+    REST API
+        Disc...
+            GeoInTime is a single page application so a frontend uses REST API to connect with a backend. All operations you perform using UI, you can implement via API calls using your programing language. You can learn how API works if you trace what's going in the network tab in your browser console.
+            Most of api functions return JSON. POST, PATCH calls usually need some JSON data in payload.
+            Base URL of GeoInTime API is: api/v1/. You need to prepend it to expressions in this reference. Example:
+            GET http://your_domain/api/v1/Contact/Il2dfRRqSNWA0EcfKuMIXoFs21FuVuw6v0TQi
+            It's recommended to create a separate user with restricted rights and use this user for API calls.
+        Authentication
+        CRUD Operations
+            List Entities
+            Read Entity
+            Create Entity
+            Update Entity
+            Delete Entity
+            Related Entities
+    Cloud
+        GitHub
+        Open Stack
+        Jenkins
+        Sonarqube
+Free Trial and Demo Application
+
+Location Identification
+	GPS
+	Cell Tower
+	Wifi Access Points
+	Bluetooth
+	Consider Ip
+    Radio Type
+
+Risks & Assumptions
+Revenue Model
+About us
+    Our team
+        Param Prakash Mandloy
+        Shruti Mandloy
+        Mohit Dube
+        Manish Sharma
+        Rakesh Jat
+Development
+    HRM Attendance
+        Role
+            Super Admin
+            Admin
+            Manager
+            Employee
+            Demo
+        Role Logic
+            Special Permissions (not-set,all,team,no)
+                User Permission
+                    Allows to restrict an ability for users to view activities, calendar and stream of other users.
+                    all - can view all
+                    team - can view activities of teammates only
+                    no - can't view
+                Assignment Permission
+                    Allows to restrict an ability to assign records and post messages to other users.
+                    all - no restriction
+                    team - can assign and post only to teammates
+                    no - can assign and post only to self
+                Data Privacy Permission (not-set,yes,no)
+                    Allows to view and erase personal data.
+                Mass Update Permission (not-set,yes,no)
+                    Defines whether users have an ability to do mass update of records.
+            Scope Level (Access,Creat,Read,Edit,Delete,Stream)
+            Field Level Security (Read,Edit)
+        Registration Form
+            Form
+                User Name
+                Your Company
+                Your email
+                Mobile No
+                Password
+                Privacy Policy
+                Subscribe monthly newsletter
+        Login Form
+            Form
+                Username
+                Password
+                Remember
+        Dashboard Page
+            Personal Notification
+            Download App
+            News
+            Menu
+            Report Summary
+            User Profile & Log out
+        Menu Logic
+            Master Data
+                One time interaction info
+            Administration
+                Login Management
+            Transaction
+                Frequently interaction
+            Reports
+                All type of reports
+        Menu List
+            Dashboard
+            Master Data
+                Company Profile (Edit Only Details not Name)
+                    Form
+                        Company name:
+                        Country:
+                        Number of Office Locations:
+                        Number of Employee:
+                        Registration Number:
+                        Mobile #:
+                        Email:
+                        Phone #:
+                        Address:
+                Office Location
+                    Form
+                        Address:
+                        Country:
+                        Mobile #:
+                        Number of Employee:
+                        Email:
+                        Phone #:
+                Geofence
+                    Form
+                        Location Name
+                        Location Type
+                        Latitude
+                        Longitude
+                        Geometry
+                        Altitude
+                        Centre
+                        Accuracy
+                        Altitude accuracy
+                        In Action
+                        Out Action
+                        Remark
+
+                Holiday Calendar
+                    Form
+                        Name
+                        Start Date
+                        End Date
+                        Comment
+                Work Hours
+                    Form
+                        Minimum working hours / week*
+                        Minimum working hours / day*
+                        Check In (Official) *
+                        Check Out (Official)*
+                        Minimum Late allowed *
+                        Minimum early allowed*
+
+                Leave Policy
+                    Form
+                        Number of Leaves per year:
+                        Leave Name:
+                        Number of Leaves per number of working days:
+                        Minimum working hours / week*
+                        Minimum working hours / day*
+                        Check In (Official) *
+                        Check Out (Official)*
+                        Minimum Late allowed *
+                        Minimum early allowed*
+
+                Shift Scheduling
+                    Form
+                        Shift Name
+                        Start Time
+                        End time
+                        Duration
+                        Description
+            Administration
+                User List (Admin/Employee)
+                    Form
+                        First Name
+                        Last Name
+                        Employee Code
+                        Date Of Joining
+                        Date Of Birth
+                        Manager Code
+                        Date
+                        Holiday
+                        Status
+                Assign Role
+            Transaction
+                Leave
+                    Approval
+                        Form
+                            Select
+                            Employee
+                            Leave Type
+                            Date
+                            Approved/Rejected
+                Regularise
+                Leave Request/Status
+                    Form
+                        Leav Name
+                        Date from
+                        Date to
+                        Reason
+
+            Reports
+                Daily attendance report
+                    Staff details (IN, OUT, late, overtime, leave taken, REST days,  etc..) on daily basis.
+                Individual attendance report
+                    Whole month details of time-in, time-out, overtime, leave taken, rest days etc,. for an individual employee in one A4 paper.
+                Consolidated reports
+                    Consolidates the Late comers, Early Leavers, Absents & missed out punching
+                Lateness summary report
+                    Only shows the late comers on that selected date
+                Performance report
+                    Monthly & Yearly wise employee late hour, no of times late, Absent, Unpaid leave taken, Medical leave taken.
+                Attendance ratio report
+                    Number of employee present on every day and attendance ratio for it.
+                Working hours summary report
+                    Month end summary of Lateness, OT hours, deductions and leaves type
+                Movement report
+                    Movement of any employee
+                Reason report
+                    Month end summary of Lateness, OT hours, deductions and leaves type
+                Exception report
+                    Reports for exceptional cases.
+                Leave taken summary
+                    No. of days & details of leave taken for every staffs. It shows the Earn, UN Earn. Taken, Balance of Annual & Medical Leaves
+                Leave consolidate
+                    Consolidate total number of leave taken for every employee
+                Hourly rate summary report
+                    Payroll calculation report for hourly rated employees.
+                Movement report
+                    Movement of an employee
+                Map View
+                    To view the employee clocking on the map
+                Timesheet
+                Employee Details
+                Timesheet (In/Out Punch)
+                Absentee List	(Today/datewise Absentee)
+                Work from Home List (Today/datewise WFH)
+                Work from Other Location List (Today/datewise WFOL)
+                Leave Taken Details
+                Print
+                Export
+            Analytics
+                Attendance analysis across same functions & different location
+                Late come report
+                Total working hours report
+                Shift planer
+                Shift deviation report
+                Planed V/s actual working hours
+                Past attendance performance to current trends
+            User Activity
+            App Log
+        Summary Report
+            On Duty
+            Total Absentee
+            Work From Home
+            Other Locations
+            Leave Balance
+            Leave Summary
+
+        Popup / Notifications
+        Benefits
+            Automate Leave Management
+            Track every bit of Time Spent
+            Easy Payroll Prosessing
+            Performance Review
+            Emprove Employee Moral
+            Generate Employee Empowerment
+            Easier Scheduling and Compilance
+            Better work to life balance
+            Automatic Documentation
+            Employee Friendly System
+            Real-time information
+            Greater accuracy
+            Overtime/undertime calculation
+            Complete audit trail
+
+        Settings
+        Rules
+        Calculation
+        Use Case

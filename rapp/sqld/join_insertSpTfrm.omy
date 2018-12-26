@@ -1,0 +1,16 @@
+ -  {"spn":"i_role","op":1,"inpara":"in_id","frmname":""}
+ -  {"spn":"i_role","op":2,"inpara":"in_name","frmname":"name"}
+ -  {"spn":"i_role","op":3,"inpara":"in_exportPermission","frmname":"exportPermission"}
+ -  {"spn":"i_role","op":4,"inpara":"in_assignment_permission","frmname":"assignmentPermission"}
+ -  {"spn":"i_role","op":5,"inpara":"in_user_permission","frmname":"userPermission"}
+ -  {"spn":"i_role","op":6,"inpara":"in_portal_permission","frmname":"portalPermission"}
+ -  {"spn":"i_role","op":7,"inpara":"in_group_email_account_permission","frmname":"groupEmailAccountPermission"}
+ -  {"spn":"i_role","op":8,"inpara":"in_data_privacy_permission","frmname":"dataPrivacyPermission"}
+ -  {"spn":"i_role","op":9,"inpara":"in_data","frmname":""}
+ -  {"spn":"i_role","op":10,"inpara":"in_field_data","frmname":""}
+ -  {"spn":"i_role","op":11,"inpara":"in_is_on","frmname":""}
+ -  {"spn":"i_role","op":12,"inpara":"in_utdate","frmname":""}
+ -  {"spn":"i_role","op":13,"inpara":"in_transaction_id","frmname":""}
+ -  {"spn":"i_role","op":14,"inpara":"in_user_id","frmname":""}
+ -  {"spn":"i_role","op":15,"inpara":"in_organisation_id","frmname":""}
+ -  {"spn":"i_role","op":16,"inpara":"in_pcdate","frmname":""}

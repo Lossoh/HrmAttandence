@@ -1,0 +1,12 @@
+SELECT
+*
+FROM information_schema.COLUMNS c
+WHERE c.TABLE_SCHEMA = '<!--rvardbName: geointime-->'
+AND c.TABLE_NAME RLIKE ''
+AND c.COLUMN_NAME RLIKE ''
+
+GROUP BY c.TABLE_NAME
+
+ORDER BY c.TABLE_NAME
+
+;

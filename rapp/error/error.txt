@@ -1,0 +1,16 @@
+/*om*/
+? /**/ on error
+err:
+'/**/'.replace(new RegExp(Regx.backless('/\*\*/')),'/*ram*/')
+SyntaxError: Invalid regular expression: /\/**\//: Nothing to repeat
+sol:
+\/\*\*\/
+keyw: Nothing to repeat
+?
+err: Formsj.getSerializeData is not a function
+sol: module.exports = moduleName;
+keyw: genrated module me difnie nahi tha
+?
+err:
+sol:
+keyw:

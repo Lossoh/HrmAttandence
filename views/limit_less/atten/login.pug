@@ -1,0 +1,147 @@
+doctype html
+html(lang='en')
+    body
+        // Page content
+        .page-content.login-cover
+            // Main content
+            .content-wrapper
+                // Content area
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Limitless - Responsive Web Application Kit by Eugene Kopyov
+        // Global stylesheets
+        link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900', rel='stylesheet', type='text/css')
+        link(href='../limit_less/global_assets/css/icons/icomoon/styles.css', rel='stylesheet', type='text/css')
+        link(href='../limit_less/assets/css/bootstrap.min.css', rel='stylesheet', type='text/css')
+        link(href='../limit_less/assets/css/bootstrap_limitless.min.css', rel='stylesheet', type='text/css')
+        link(href='../limit_less/assets/css/layout.min.css', rel='stylesheet', type='text/css')
+        link(href='../limit_less/assets/css/components.min.css', rel='stylesheet', type='text/css')
+        link(href='../limit_less/assets/css/colors.min.css', rel='stylesheet', type='text/css')
+        // /global stylesheets
+        // Core JS files
+        script(src='../limit_less/global_assets/js/main/jquery.min.js')
+        script(src='../limit_less/global_assets/js/main/bootstrap.bundle.min.js')
+        script(src='../limit_less/global_assets/js/plugins/loaders/blockui.min.js')
+        // /core JS files
+        // Theme JS files
+        script(src='../limit_less/global_assets/js/plugins/forms/styling/uniform.min.js')
+        script(src='../limit_less/assets/js/app.js')
+        script(src='../limit_less/global_assets/js/demo_pages/login.js')
+        script(src='../limit_less/global_assets/js/plugins/forms/validation/validate.min.js')
+        script(src='../limit_less/global_assets/js/demo_pages/form_validation.js')
+        //rjs
+        script(src='../rapp/Rinc/incrdata.js')
+        script(src='../rapp/Rinc/incCore_libj.js')
+        script(src='../rapp/Rinc/incjsBasej.js')
+
+        // /theme JS files
+                    // /page content
+        .content.d-flex.justify-content-center.align-items-center
+                    // Login form
+                    form.login-form.wmin-sm-400(action='index.html')
+                        .card.mb-0
+                            ul.nav.nav-tabs.nav-justified.alpha-grey.mb-0
+                                li.nav-item
+                                    a.nav-link.border-y-0.border-left-0.active(href='#login-tab1', data-toggle='tab')
+                                        h6.my-1 Sign in
+                                li.nav-item
+                                    a.nav-link.border-y-0.border-right-0(href='#login-tab2', data-toggle='tab')
+                                        h6.my-1 Register
+                            .tab-content.card-body
+                                #login-tab1.tab-pane.fade.show.active
+                                    .text-center.mb-3
+                                        img.rounded-circle(src='../limit_less/global_assets/images/git_logo_n.png', width='78', height='78', alt='')
+                                        h5.mb-0 Login to your account
+                                        span.d-block.text-muted Your credentials
+                                    .form-group.form-group-feedback.form-group-feedback-left
+                                        input.form-control(type='text', name='Username', required='required', placeholder='Username')
+                                        .form-control-feedback
+                                            i.icon-user.text-muted
+                                    .form-group.form-group-feedback.form-group-feedback-left
+                                        input.form-control(type='password', name='Password', required='required' placeholder='Password')
+                                        .form-control-feedback
+                                            i.icon-lock2.text-muted
+                                    .form-group.d-flex.align-items-center
+                                        .form-check.mb-0
+                                            label.form-check-label
+                                                input.form-input-styled(type='checkbox', name='remember', checked='', data-fouc='')
+                                                | 											Remember
+                                        a.ml-auto(href='login_password_recover.html') Forgot password?
+                                    .form-group
+                                        button.btn.btn-primary.btn-block(type='submit') Sign in
+                                    //
+                                      <div class="form-group text-center text-muted content-divider">
+                                      <span class="px-2">or sign in with</span>
+                                      </div>
+                                      <div class="form-group text-center">
+                                      <button type="button" class="btn btn-outline bg-indigo border-indigo text-indigo btn-icon rounded-round border-2"><i class="icon-facebook"></i></button>
+                                      <button type="button" class="btn btn-outline bg-pink-300 border-pink-300 text-pink-300 btn-icon rounded-round border-2 ml-2"><i class="icon-dribbble3"></i></button>
+                                      <button type="button" class="btn btn-outline bg-slate-600 border-slate-600 text-slate-600 btn-icon rounded-round border-2 ml-2"><i class="icon-github"></i></button>
+                                      <button type="button" class="btn btn-outline bg-info border-info text-info btn-icon rounded-round border-2 ml-2"><i class="icon-twitter"></i></button>
+                                      </div>
+                                    .form-group.text-center.text-muted.content-divider
+                                        span.px-2 Don't have an account?
+                                    .form-group
+                                        a.btn.btn-light.btn-block(href='#') Sign up
+                                    span.form-text.text-center.text-muted
+                                        | By continuing, you're confirming that you've read our
+                                        a(href='#') Terms & Conditions
+                                        |  and
+                                        a(href='#') Cookie Policy
+                                #login-tab2.tab-pane.fade
+                                    .text-center.mb-3
+                                        img.rounded-circle(src='../limit_less/global_assets/images/git_logo_n.png', width='78', height='78', alt='')
+                                        // <i class="icon-plus3 icon-2x text-success border-success border-3 rounded-round p-3 mb-3 mt-1"></i>
+                                        h5.mb-0 Create account
+                                        span.d-block.text-muted All fields are required
+                                    .form-group.form-group-feedback.form-group-feedback-left
+                                        input.form-control(type='text', required='required', name='User_Name', placeholder='User_Name')
+                                        .form-control-feedback
+                                            i.icon-user.text-muted
+                                    .form-group.form-group-feedback.form-group-feedback-left
+                                        input.form-control(type='text', required='required', name='Your_Company', placeholder='Your Company')
+                                        .form-control-feedback
+                                            i.icon-home.text-muted
+                                    .form-group.form-group-feedback.form-group-feedback-left
+                                        // <input type="email" name="email" class="form-control" id="email" required="" name="Enter a valid email address" placeholder="Enter a valid email address">
+                                        input.form-control(type='email', required='required', name='Your_email', placeholder='Your email')
+                                        .form-control-feedback
+                                            i.icon-mention.text-muted
+                                    .form-group.form-group-feedback.form-group-feedback-left
+                                        input.form-control(type='text', required='required', name='Mobile_No', placeholder='Mobile No.')
+                                        .form-control-feedback
+                                            i.icon-mobile.text-muted
+                                    .form-group.form-group-feedback.form-group-feedback-left
+                                        input.form-control(type='password', required='required', name='password', placeholder='password')
+                                        .form-control-feedback
+                                            i.icon-user-lock.text-muted
+                                    .form-group.form-group-feedback.form-group-feedback-left
+                                        input.form-control(type='password', required='required', name='repeat_password', placeholder='repeat password')
+                                        .form-control-feedback
+                                            i.icon-user-lock.text-muted
+                                    .form-group.text-center.text-muted.content-divider
+                                        span.px-2 Additions
+                                    .form-group
+                                        .form-check
+                                            label.form-check-label
+                                                input.form-input-styled(type='checkbox', name='Privacy_Policy', checked='', data-fouc='')
+                                                | 											Accept
+                                                a(href='#') Privacy Policy
+                                        .form-check
+                                            label.form-check-label
+                                                input.form-input-styled(type='checkbox', name='Subscribe_monthly_newsletter', checked='', data-fouc='')
+                                                | 											Subscribe to monthly newsletter
+                                        .form-check
+                                            label.form-check-label
+                                                input.form-input-styled(type='checkbox', name='terms_of_service', data-fouc='')
+                                                | 											Accept
+                                                a(href='#') terms of service
+                                    button.btn.bg-dark.btn-block(type='submit') Register
+                    // /login form
+                    // /content area
+                    // /main content
+
+        script(src='../rapp/Rinc/incrlib.js')
+        script(src='../limit_less/rapp/curjs/login.js')

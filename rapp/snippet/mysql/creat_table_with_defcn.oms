@@ -1,0 +1,18 @@
+
+CREATE TABLE <!--rvartableName: --> (
+  id varchar(99) COLLATE utf8_unicode_ci NOT NULL,
+  name varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+
+  <!--rreqvarcnListStr: -->
+
+  is_on tinyint(1) DEFAULT '1',
+  utdate datetime DEFAULT NULL,
+
+  transaction_id varchar(99) COLLATE utf8_unicode_ci DEFAULT '',
+  user_id varchar(99) COLLATE utf8_unicode_ci DEFAULT ''',
+  organisation_id varchar(99) COLLATE utf8_unicode_ci DEFAULT ''',
+  pcdate timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+  PRIMARY KEY (id)
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;

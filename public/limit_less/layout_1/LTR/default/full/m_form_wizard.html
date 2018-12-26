@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="../../../../global_assets/js/main/jquery.min.js"></script>
+	<script src="../../../../global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="../../../../global_assets/js/plugins/forms/wizards/steps.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/validation/validate.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/cookie.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_wizard.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+
+			<!-- Content area -->
+			<div class="content">
+	            <!-- Wizard with validation -->
+	            <div class="card">
+					<div class="card-header bg-white header-elements-inline" style="background-color:#F0F0F0">
+						<h6 class="card-title">First Time Setup</h6>
+						<div class="header-elements">
+	                	</div>
+					</div>
+
+                	<form class="wizard-form steps-validation" action="#" data-fouc>
+						<h6>Company Profile</h6>
+						<fieldset>
+							
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Company Name:<span class="text-danger">*</span></label>
+											<input type="text" value="GeioInTime" name="name" class="form-control required" placeholder="Company Name">
+										</div>
+									</div>
+									<div class="col-md-6">
+											<div class="form-group">
+												<label>Country: <span class="text-danger">*</span></label>
+												<select name="location" data-placeholder="Choose Country" class="form-control form-control-select2 required" data-fouc>
+													<option></option>
+													<optgroup label="North America">
+														<option value="0" selected>India</option>
+														<option value="1">United States</option>
+														<option value="2">Canada</option>
+													</optgroup>
+		
+													<optgroup label="Latin America">
+														<option value="3">Chile</option>
+														<option value="4">Argentina</option>
+														<option value="5">Colombia</option>
+														<option value="6">Peru</option>
+													</optgroup>
+		
+													<optgroup label="Europe">
+														<option value="8">Croatia</option>
+														<option value="9">Hungary</option>
+														<option value="10">Ukraine</option>
+														<option value="11">Greece</option>
+													</optgroup>
+												</select>
+											</div>
+										</div>
+								</div>							
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Number of Office Locations: <span class="text-danger">*</span></label>
+											<input type="text" value="2" name="noofficelocations" class="form-control required" placeholder="Number of Office Locations">
+										</div>
+									</div>								
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Number of Employees: <span class="text-danger">*</span></label>
+											<input type="text" name="noofemployees" value="101" class="form-control required" placeholder="Number of Employees">
+										</div>
+									</div>
+								</div>
+							
+						</fieldset>
+
+						<h6>Employee List</h6>
+						<fieldset>
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Add Employee Details</h5>
+									<div class="card-body">
+										(Enter manually or upload excel in the template)
+									</div>
+									<div class="header-elements">
+										<div class="list-icons">
+											<button type="button" class="raddEmployeeDetails btn btn-outline bg-primary-400 text-primary-800 btn-icon rounded-round ml-2"><i class="icon-user-plus"></i></button>
+											<button type="button" class="btn btn-outline bg-primary-400 text-primary-800 btn-icon rounded-round ml-2"><i class="icon-upload"></i></button>
+											<!-- 												<a class="list-icons-item" data-action="collapse"></a>
+                                                                                                <a class="list-icons-item" data-action="reload"></a>
+                                                                                                <a class="list-icons-item" data-action="remove"></a> -->
+										</div>
+									</div>
+								</div>
+
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+										<tr>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Employee Code</th>
+											<th>Date Of Joining</th>
+											<th>Date Of Birth</th>
+											<th>Manager Code</th>
+										</tr>
+										</thead>
+										<tbody class="rappendEmployeeDetails">
+										<tr>
+											<td><div class="form-group"><input type="text" name="First_Name[]" class="form-control" placeholder="Marth"></div></td>
+											<td><div class="form-group"><input type="text" name="Last_Name[]" class="form-control" placeholder="Enright"></div></td>
+											<td><div class="form-group"><input type="text" name="Employee_Code[]" class="form-control" placeholder="EMP001"></div></td>
+											<td>
+												<!-- <div class="input-group">
+                                                        <span class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="icon-calendar5"></i></span>
+                                                        </span>
+                                                        <input type="text" class="form-control pickadate-selectors picker__input" placeholder="Try me…" readonly="" id="P2146331523" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P2146331523_root"><div class="picker" id="P2146331523_root" aria-hidden="true"><div class="picker__holder" tabindex="-1"><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><div class="picker__header"><select class="picker__select--year" aria-controls="P2146331523_table" title="Select a year" disabled="disabled"><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018" selected="">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option></select><select class="picker__select--month" aria-controls="P2146331523_table" title="Select a month" disabled="disabled"><option value="0">January</option><option value="1">February</option><option value="2">March</option><option value="3">April</option><option value="4">May</option><option value="5">June</option><option value="6">July</option><option value="7">August</option><option value="8">September</option><option value="9">October</option><option value="10">November</option><option value="11" selected="">December</option></select><div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="P2146331523_table" title="Previous month"> </div><div class="picker__nav--next" data-nav="1" role="button" aria-controls="P2146331523_table" title="Next month"> </div></div><table class="picker__table" id="P2146331523_table" role="grid" aria-controls="P2146331523" aria-readonly="true"><thead><tr><th class="picker__weekday" scope="col" title="Sunday">Sun</th><th class="picker__weekday" scope="col" title="Monday">Mon</th><th class="picker__weekday" scope="col" title="Tuesday">Tue</th><th class="picker__weekday" scope="col" title="Wednesday">Wed</th><th class="picker__weekday" scope="col" title="Thursday">Thu</th><th class="picker__weekday" scope="col" title="Friday">Fri</th><th class="picker__weekday" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543084200000" role="gridcell" aria-label="25 November, 2018">25</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543170600000" role="gridcell" aria-label="26 November, 2018">26</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543257000000" role="gridcell" aria-label="27 November, 2018">27</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543343400000" role="gridcell" aria-label="28 November, 2018">28</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543429800000" role="gridcell" aria-label="29 November, 2018">29</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543516200000" role="gridcell" aria-label="30 November, 2018">30</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1543602600000" role="gridcell" aria-label="1 December, 2018">1</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1543689000000" role="gridcell" aria-label="2 December, 2018">2</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1543775400000" role="gridcell" aria-label="3 December, 2018">3</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1543861800000" role="gridcell" aria-label="4 December, 2018">4</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1543948200000" role="gridcell" aria-label="5 December, 2018">5</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544034600000" role="gridcell" aria-label="6 December, 2018">6</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544121000000" role="gridcell" aria-label="7 December, 2018">7</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544207400000" role="gridcell" aria-label="8 December, 2018">8</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544293800000" role="gridcell" aria-label="9 December, 2018">9</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544380200000" role="gridcell" aria-label="10 December, 2018">10</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544466600000" role="gridcell" aria-label="11 December, 2018">11</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544553000000" role="gridcell" aria-label="12 December, 2018">12</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544639400000" role="gridcell" aria-label="13 December, 2018">13</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544725800000" role="gridcell" aria-label="14 December, 2018">14</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544812200000" role="gridcell" aria-label="15 December, 2018">15</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1544898600000" role="gridcell" aria-label="16 December, 2018" aria-activedescendant="true">16</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544985000000" role="gridcell" aria-label="17 December, 2018">17</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545071400000" role="gridcell" aria-label="18 December, 2018">18</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545157800000" role="gridcell" aria-label="19 December, 2018">19</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545244200000" role="gridcell" aria-label="20 December, 2018">20</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545330600000" role="gridcell" aria-label="21 December, 2018">21</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545417000000" role="gridcell" aria-label="22 December, 2018">22</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545503400000" role="gridcell" aria-label="23 December, 2018">23</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545589800000" role="gridcell" aria-label="24 December, 2018">24</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545676200000" role="gridcell" aria-label="25 December, 2018">25</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545762600000" role="gridcell" aria-label="26 December, 2018">26</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545849000000" role="gridcell" aria-label="27 December, 2018">27</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545935400000" role="gridcell" aria-label="28 December, 2018">28</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1546021800000" role="gridcell" aria-label="29 December, 2018">29</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1546108200000" role="gridcell" aria-label="30 December, 2018">30</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1546194600000" role="gridcell" aria-label="31 December, 2018">31</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1546281000000" role="gridcell" aria-label="1 January, 2019">1</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1546367400000" role="gridcell" aria-label="2 January, 2019">2</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1546453800000" role="gridcell" aria-label="3 January, 2019">3</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1546540200000" role="gridcell" aria-label="4 January, 2019">4</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1546626600000" role="gridcell" aria-label="5 January, 2019">5</div></td></tr></tbody></table><div class="picker__footer"><button class="picker__button--today" type="button" data-pick="1544898600000" aria-controls="P2146331523" disabled="disabled">Today</button><button class="picker__button--clear" type="button" data-clear="1" aria-controls="P2146331523" disabled="disabled">Clear</button><button class="picker__button--close" type="button" data-close="true" aria-controls="P2146331523" disabled="disabled">Close</button></div></div></div></div></div></div>
+                                                </div> -->
+												<div class="form-group">
+													<input type="date" class="form-control" name="Date_Of_Joining[]" placeholder="DOJ">
+													<!--<span class="form-text text-muted">99/99/9999</span> -->
+												</div>
+											</td>
+
+											<td>
+												<div class="form-group">
+													<input type="date" class="form-control" name="Date_Of_Birth[]" placeholder="DOB">
+													<!-- <span class="form-text text-muted">99/99/9999</span> -->
+												</div>
+											</td>
+											<td><div class="form-group"><input type="text" name="Manager_Code[]" class="form-control" placeholder="EMP001"></div></td>
+										</tr>
+										</tbody>
+										<script>
+											var hEmployeeDetails = '<tr>             <td><div class="form-group"><input type="text" name="First_Name[]" class="form-control" placeholder="Marth"></div></td>             <td><div class="form-group"><input type="text" name="Last_Name[]" class="form-control" placeholder="Enright"></div></td>             <td><div class="form-group"><input type="text" name="Employee_Code[]" class="form-control" placeholder="EMP001"></div></td>             <td>                 <!-- <div class="input-group">                         <span class="input-group-prepend">                             <span class="input-group-text"><i class="icon-calendar5"></i></span>                         </span>                         <input type="text" class="form-control pickadate-selectors picker__input" placeholder="Try me…" readonly="" id="P2146331523" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="P2146331523_root"><div class="picker" id="P2146331523_root" aria-hidden="true"><div class="picker__holder" tabindex="-1"><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><div class="picker__header"><select class="picker__select--year" aria-controls="P2146331523_table" title="Select a year" disabled="disabled"><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018" selected="">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option></select><select class="picker__select--month" aria-controls="P2146331523_table" title="Select a month" disabled="disabled"><option value="0">January</option><option value="1">February</option><option value="2">March</option><option value="3">April</option><option value="4">May</option><option value="5">June</option><option value="6">July</option><option value="7">August</option><option value="8">September</option><option value="9">October</option><option value="10">November</option><option value="11" selected="">December</option></select><div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="P2146331523_table" title="Previous month"> </div><div class="picker__nav--next" data-nav="1" role="button" aria-controls="P2146331523_table" title="Next month"> </div></div><table class="picker__table" id="P2146331523_table" role="grid" aria-controls="P2146331523" aria-readonly="true"><thead><tr><th class="picker__weekday" scope="col" title="Sunday">Sun</th><th class="picker__weekday" scope="col" title="Monday">Mon</th><th class="picker__weekday" scope="col" title="Tuesday">Tue</th><th class="picker__weekday" scope="col" title="Wednesday">Wed</th><th class="picker__weekday" scope="col" title="Thursday">Thu</th><th class="picker__weekday" scope="col" title="Friday">Fri</th><th class="picker__weekday" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543084200000" role="gridcell" aria-label="25 November, 2018">25</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543170600000" role="gridcell" aria-label="26 November, 2018">26</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543257000000" role="gridcell" aria-label="27 November, 2018">27</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543343400000" role="gridcell" aria-label="28 November, 2018">28</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543429800000" role="gridcell" aria-label="29 November, 2018">29</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1543516200000" role="gridcell" aria-label="30 November, 2018">30</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1543602600000" role="gridcell" aria-label="1 December, 2018">1</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1543689000000" role="gridcell" aria-label="2 December, 2018">2</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1543775400000" role="gridcell" aria-label="3 December, 2018">3</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1543861800000" role="gridcell" aria-label="4 December, 2018">4</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1543948200000" role="gridcell" aria-label="5 December, 2018">5</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544034600000" role="gridcell" aria-label="6 December, 2018">6</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544121000000" role="gridcell" aria-label="7 December, 2018">7</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544207400000" role="gridcell" aria-label="8 December, 2018">8</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544293800000" role="gridcell" aria-label="9 December, 2018">9</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544380200000" role="gridcell" aria-label="10 December, 2018">10</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544466600000" role="gridcell" aria-label="11 December, 2018">11</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544553000000" role="gridcell" aria-label="12 December, 2018">12</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544639400000" role="gridcell" aria-label="13 December, 2018">13</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544725800000" role="gridcell" aria-label="14 December, 2018">14</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544812200000" role="gridcell" aria-label="15 December, 2018">15</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1544898600000" role="gridcell" aria-label="16 December, 2018" aria-activedescendant="true">16</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1544985000000" role="gridcell" aria-label="17 December, 2018">17</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545071400000" role="gridcell" aria-label="18 December, 2018">18</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545157800000" role="gridcell" aria-label="19 December, 2018">19</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545244200000" role="gridcell" aria-label="20 December, 2018">20</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545330600000" role="gridcell" aria-label="21 December, 2018">21</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545417000000" role="gridcell" aria-label="22 December, 2018">22</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545503400000" role="gridcell" aria-label="23 December, 2018">23</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545589800000" role="gridcell" aria-label="24 December, 2018">24</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545676200000" role="gridcell" aria-label="25 December, 2018">25</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545762600000" role="gridcell" aria-label="26 December, 2018">26</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545849000000" role="gridcell" aria-label="27 December, 2018">27</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1545935400000" role="gridcell" aria-label="28 December, 2018">28</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1546021800000" role="gridcell" aria-label="29 December, 2018">29</div></td></tr><tr><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1546108200000" role="gridcell" aria-label="30 December, 2018">30</div></td><td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1546194600000" role="gridcell" aria-label="31 December, 2018">31</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1546281000000" role="gridcell" aria-label="1 January, 2019">1</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1546367400000" role="gridcell" aria-label="2 January, 2019">2</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1546453800000" role="gridcell" aria-label="3 January, 2019">3</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1546540200000" role="gridcell" aria-label="4 January, 2019">4</div></td><td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1546626600000" role="gridcell" aria-label="5 January, 2019">5</div></td></tr></tbody></table><div class="picker__footer"><button class="picker__button--today" type="button" data-pick="1544898600000" aria-controls="P2146331523" disabled="disabled">Today</button><button class="picker__button--clear" type="button" data-clear="1" aria-controls="P2146331523" disabled="disabled">Clear</button><button class="picker__button--close" type="button" data-close="true" aria-controls="P2146331523" disabled="disabled">Close</button></div></div></div></div></div></div>                 </div> -->                 <div class="form-group">                     <input type="date" class="form-control" name="Date_Of_Joining[]" placeholder="DOJ">                     <!--<span class="form-text text-muted">99/99/9999</span> -->                 </div>             </td>                      <td>                 <div class="form-group">                     <input type="date" class="form-control" name="Date_Of_Birth[]" placeholder="DOB">                     <!-- <span class="form-text text-muted">99/99/9999</span> -->                 </div>             </td>             <td><div class="form-group"><input type="text" name="Manager_Code[]" class="form-control" placeholder="EMP001"></div></td>         </tr>';
+											$('.raddEmployeeDetails').on('click',function(e){
+											    $('.rappendEmployeeDetails').append(hEmployeeDetails)
+											});
+										</script>
+
+									</table>
+								</div>
+							</div>
+						</fieldset>
+
+						<h6>Holidays</h6>
+						<fieldset>
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Holiday Calender</h5>
+									<div class="card-body">
+									</div>
+									<div class="header-elements">
+										<div class="list-icons">
+											<button type="button" class="raddHoliday_Calender btn btn-outline bg-primary-400 text-primary-800 btn-icon rounded-round ml-2"><i class="icon-calendar5"></i></button>
+											<button type="button" class="btn btn-outline bg-primary-400 text-primary-800 btn-icon rounded-round ml-2"><i class="icon-upload"></i></button>
+											<!-- 												<a class="list-icons-item" data-action="collapse"></a>
+                                                                                                <a class="list-icons-item" data-action="reload"></a>
+                                                                                                <a class="list-icons-item" data-action="remove"></a> -->
+										</div>
+									</div>
+								</div>
+
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+										<tr>
+											<th>Date</th>
+											<th>Holiday</th>
+										</tr>
+										</thead>
+										<tbody class="rappendHoliday_Calender">
+										<tr>
+											<td><div class="form-group">
+												<input type="date" class="form-control" name="Holiday_date[]" placeholder="Date">
+												<!-- <span class="form-text text-muted">99/99/9999</span> -->
+											</div>
+											</td>
+											<td><div class="form-group"><input type="text" name="Holiday_name[]" class="form-control" placeholder="Marth"></div></td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<script>
+								var hHoliday_Calender = '<tr>             <td><div class="form-group">                 <input type="date" class="form-control" name="Holiday_date[]" placeholder="Date">                 <!-- <span class="form-text text-muted">99/99/9999</span> -->             </div>             </td>             <td><div class="form-group"><input type="text" name="Holiday_name[]" class="form-control" placeholder="Marth"></div></td>         </tr>';
+								$('.raddHoliday_Calender').on('click',function (e) {
+									e.preventDefault();
+									$('.rappendHoliday_Calender').append(hHoliday_Calender);
+
+                                });
+							</script>
+						</fieldset>
+
+						<h6>Leaves and Work Hours</h6>
+						<fieldset>
+								<div class="card">
+										<div class="card-header header-elements-inline">
+											<h5 class="card-title">Leave Rules</h5>
+											<!--<button type="button" class="btn btn-primary raddLeave"><i class="icon-cog3 mr-2"></i> Add Leave</button>-->
+											<div class="header-elements">
+												<div class="list-icons">
+													<button type="button" class="raddLeave btn btn-outline bg-primary-400 text-primary-800 btn-icon rounded-round ml-2"><i class="icon-calendar5"></i></button>
+													<button type="button" class="btn btn-outline bg-primary-400 text-primary-800 btn-icon rounded-round ml-2"><i class="icon-upload"></i></button>
+
+													<!-- <a class="list-icons-item" data-action="collapse"></a>
+													<a class="list-icons-item" data-action="reload"></a>
+													<a class="list-icons-item" data-action="remove"></a> -->
+												</div>
+											</div>
+										</div>
+										<div class="card-body">
+											<form action="#">
+												<div class="row">
+													<div class="col-md-12 rappendLeave">
+															<!--<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Shipping details</legend>-->
+					
+															<div class="row">
+																<!--<div class="col-md-3">
+																	&lt;!&ndash;<div class="form-group">
+																		<input type="text" placeholder="11" value="11" class="form-control">
+																	</div>&ndash;&gt;
+																</div>-->
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label>1 Privilege Leave per 11 working days<span class="text-danger">*</span></label>
+																	</div>											
+																</div>
+															</div>
+
+														<div class="row rgetRow">
+															<div class="col-md-2">
+																<div class="form-group">
+																	<input type="text" placeholder="Number of " name="leav_number[]" value="" class="form-control" aria-invalid="false">
+																</div>
+															</div>
+
+															<div class="col-md-3">
+																<div class="form-group">
+																	<input type="text" placeholder="Leave Type (PL,CL,SL)" name="leav_type[]" value="" class="form-control" aria-invalid="false">
+																</div>
+															</div>
+															<div class="col-md-3">
+																<div class="form-group">
+																	<label>Leaves per Year<span class="text-danger">*</span></label>
+																</div>
+															</div>
+
+														</div>
+
+													</div>
+													<script>
+                                                        /*rscript*/
+                                                        var htmlPl = '<div class="row rgetRow">             <div class="col-md-2">                 <div class="form-group">                     <input type="text" placeholder="Number of " name="leav_number[]" value="" class="form-control" aria-invalid="false">                 </div>             </div>                      <div class="col-md-3">                 <div class="form-group">                     <input type="text" placeholder="Leave Type (PL,CL,SL)" name="leav_type[]" value="" class="form-control" aria-invalid="false">                 </div>             </div>             <div class="col-md-3">                 <div class="form-group">                     <label>Leaves per Year<span class="text-danger">*</span></label>                 </div>             </div>                  </div>';
+
+
+                                                        $('.raddLeave').on('click',function (e) {
+                                                            e.preventDefault();
+                                                            $('.rappendLeave').append(htmlPl);
+                                                        });
+
+
+													</script>
+												</div>
+												<div class="row">
+														<div class="col-md-12">
+																<legend class="font-weight-semibold"><h5 class="card-title">Working Hours</h5></legend>
+																<div class="row">
+																		<div class="col-md-3">
+																			<div class="form-group">	
+																				<input name="working_hours_week" type="text" placeholder="" value="" class="form-control">
+																			</div>
+																		</div>
+																		<div class="col-md-3">
+																			<div class="form-group">
+																				<label>Minimum working hours / week<span class="text-danger">*</span></label>
+																			</div>											
+																		</div>
+																		<div class="col-md-3">
+																				<div class="form-group">	
+																					<input name="working_hours_day" type="text" placeholder="" value="" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="form-group">
+																					<label>Minimum working hours / day<span class="text-danger">*</span></label>
+																				</div>											
+																		</div>
+																</div>
+																<div class="row">
+																		<div class="col-md-3">
+																			<div class="form-group">	
+																				<input name="check_in" type="text" placeholder="" value="" class="form-control">
+																			</div>
+																		</div>
+																		<div class="col-md-3">
+																			<div class="form-group">
+																				<label>Check In (Official) <span class="text-danger">*</span></label>
+																			</div>											
+																		</div>
+																		<div class="col-md-3">
+																				<div class="form-group">	
+																					<input name="check_out" type="text" placeholder="" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="form-group">
+																					<label>Check Out (Official)<span class="text-danger">*</span></label>
+																				</div>											
+																		</div>
+																</div>
+																<div class="row">
+																		<div class="col-md-3">
+																			<div class="form-group">	
+																				<input name="minute_late_allowed" type="time" placeholder="Minimum early allowed" value="" class="form-control">
+																			</div>
+																		</div>
+																		<div class="col-md-3">
+																			<div class="form-group">
+																				<label>Minute Late allowed <span class="text-danger">*</span></label>
+																			</div>											
+																		</div>
+																		<div class="col-md-3">
+																				<div class="form-group">	
+																					<input name="minute_early_allowed" type="time" placeholder="Minimum early allowed" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="form-group">
+																					<label>Minimum early allowed<span class="text-danger">*</span></label>
+																				</div>											
+																		</div>
+																</div>																																														
+														</div>
+													</div>												
+											</form>
+										</div>
+									</div>						
+						</fieldset>
+					</form>
+	            </div>
+	            <!-- /wizard with validation -->
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+						<li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /content wrapper -->
+
+	</div>
+	<!-- /page content -->
+<script>
+	//$('#steps-uid-0-p-0 :input').serializeArray();
+	$('#steps-uid-0-p-3 :input').serializeArray();
+
+	var t =[]
+	$('[role="tab"]').map(function(val,i){
+		t.push($(this).text());
+
+	});
+	console.log(t.join('\n'))
+</script>
+</body>
+</html>

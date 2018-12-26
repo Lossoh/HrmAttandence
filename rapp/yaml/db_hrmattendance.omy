@@ -1,0 +1,420 @@
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: address }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: address }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: address }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: address }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: address }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: address }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: address }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: address }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: contact_number }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: contact_number }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: contact_number }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: contact_number }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: contact_number }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: contact_number }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: contact_number }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: contact_number }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: department }
+- { val: pid,type: bigint(18),def: 0,onoff: ,tn: department }
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: department }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: department }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: department }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: department }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: department }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: department }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: department }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: designation }
+- { val: pid,type: bigint(18),def: 0,onoff: ,tn: designation }
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: designation }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: designation }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: designation }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: designation }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: designation }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: designation }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: designation }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+- { val: designation_title,type: varchar(150),def: ,onoff: ,tn: designation }
+- { val: designation_description,type: varchar(150),def: ,onoff: ,tn: designation }
+- { val: designation_specification,type: varchar(150),def: ,onoff: ,tn: designation }
+- { val: note,type: varchar(150),def: ,onoff: ,tn: designation }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: education }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: education }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: education }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: education }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: education }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: education }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: education }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: education }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+- { val: description,type: varchar(150),def: ,onoff: ,tn: education }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: email_address }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: email_address }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: email_address }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: email_address }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: email_address }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: email_address }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: email_address }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: email_address }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: employee_time_sheet }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: employee_time_sheet }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: employee_time_sheet }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: employee_time_sheet }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: employee_time_sheet }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: employee_time_sheet }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: employee_time_sheet }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: employee_time_sheet }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: languages }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: languages }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: languages }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: languages }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: languages }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: languages }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: languages }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: languages }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: leave_approve }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: leave_approve }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: leave_approve }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: leave_approve }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: leave_approve }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: leave_approve }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: leave_approve }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: leave_approve }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: leave_master }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: leave_master }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: leave_master }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: leave_master }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: leave_master }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: leave_master }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: leave_master }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: leave_master }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: leave_request }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: leave_request }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: leave_request }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: leave_request }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: leave_request }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: leave_request }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: leave_request }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: leave_request }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: leave_type }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: leave_type }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: leave_type }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: leave_type }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: leave_type }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: leave_type }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: leave_type }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: leave_type }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: menu_master }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: menu_master }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: menu_master }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: menu_master }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: menu_master }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: menu_master }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: menu_master }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: menu_master }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: nationality }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: nationality }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: nationality }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: nationality }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: nationality }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: nationality }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: nationality }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: nationality }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: office_location }
+- { val: pid,type: bigint(18),def: 0,onoff: ,tn: office_location }
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: office_location }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: office_location }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: office_location }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: office_location }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: office_location }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: office_location }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: office_location }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: pay_grades }
+- { val: pid,type: bigint(18),def: 0,onoff: ,tn: pay_grades }
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: pay_grades }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: pay_grades }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: pay_grades }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: pay_grades }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: pay_grades }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: pay_grades }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: pay_grades }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: settings }
+- { val: pid,type: bigint(18),def: 0,onoff: ,tn: settings }
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: settings }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: settings }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: settings }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: settings }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: settings }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: settings }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: settings }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: skills }
+- { val: pid,type: bigint(18),def: 0,onoff: ,tn: skills }
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: skills }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: skills }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: skills }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: skills }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: skills }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: skills }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: skills }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+- { val: description,type: varchar(150),def: ,onoff: ,tn: skills }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: user_log }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: user_log }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: user_log }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: user_log }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: user_log }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: user_log }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: user_log }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: user_log }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: user_master }
+- { val: pid,type: bigint(18),def: 0,onoff: ,tn: user_master }
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: user_master }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: user_master }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: user_master }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: user_master }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: user_master }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: user_master }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: user_master }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: user_permission }
+- { val: pid,type: bigint(18),def: 0,onoff: ,tn: user_permission }
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: user_permission }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: user_permission }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: user_permission }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: user_permission }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: user_permission }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: user_permission }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: user_permission }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: user_status }
+- { val: pid,type: bigint(18),def: 0,onoff: ,tn: user_status }
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: user_status }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: user_status }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: user_status }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: user_status }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: user_status }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: user_status }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: user_status }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }
+
+
+- { val: id,type: varchar(54),def: ,onoff: ,tn: work_shift }
+
+- { val: account_no,type: varchar(150),def: ,onoff: ,tn: work_shift }
+- { val: name,type: varchar(150),def: ,onoff: ,tn: work_shift }
+- { val: alias,type: varchar(150),def: ,onoff: ,tn: work_shift }
+- { val: is_visible,type: tinyint(1),def: 1,onoff: ,tn: work_shift }
+- { val: is_deleted,type: tinyint(1),def: 0,onoff: ,tn: work_shift }
+
+
+
+- { val: created_date,type: datetime,def: ,onoff: ,tn: work_shift }
+- { val: modified_date,type: datetime,def: ,onoff: ,tn: work_shift }
+- { val: assigned_user_id,type: varchar(54),def: ,tn: account }
+- { val: log_user_id,type: varchar(54),def: ,tn: account }
+- { val: transaction_id,type: varchar(54),def: ,tn: account }
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,tn: account }

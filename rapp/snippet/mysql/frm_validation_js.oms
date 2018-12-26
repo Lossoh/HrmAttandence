@@ -1,0 +1,13 @@
+SELECT
+SPECIFIC_NAME riclass,ORDINAL_POSITION rindex, '' name,'' val,'' vel,'' msg,'' errOnOff
+FROM information_schema.PARAMETERS i
+WHERE i.SPECIFIC_SCHEMA = '<!--rvardbName: geointime-->'
+AND i.SPECIFIC_NAME RLIKE '\\\\b<!--rvarspName: -->\\\\b'
+AND i.PARAMETER_NAME RLIKE ''
+
+
+ORDER BY i.ORDINAL_POSITION
+;
+
+
+

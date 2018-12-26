@@ -1,0 +1,13 @@
+SELECT
+*
+FROM information_schema.PARAMETERS i
+WHERE i.SPECIFIC_SCHEMA = '<!--rvardbName: geointime-->'
+AND i.SPECIFIC_NAME RLIKE ''
+AND i.PARAMETER_NAME RLIKE ''
+
+GROUP BY i.SPECIFIC_NAME
+ORDER BY i.SPECIFIC_NAME
+;
+
+
+

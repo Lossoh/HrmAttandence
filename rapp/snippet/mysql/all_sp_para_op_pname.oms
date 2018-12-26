@@ -1,0 +1,9 @@
+SELECT
+i.\`SPECIFIC_NAME\` spn,i.\`ORDINAL_POSITION\` op,i.\`PARAMETER_NAME\` inpara,'' frmname
+FROM information_schema.PARAMETERS i
+WHERE i.SPECIFIC_SCHEMA = '<!--rvardbName: geointime-->'
+AND i.SPECIFIC_NAME RLIKE ''
+AND i.PARAMETER_NAME RLIKE ''
+
+ORDER BY i.SPECIFIC_NAME , i.ORDINAL_POSITION
+;

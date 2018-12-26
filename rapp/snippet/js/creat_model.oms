@@ -1,0 +1,15 @@
+/*om*/
+
+var /*rmodulName:*/ = /*rmodulName:*/ || {};
+/*rmodulName:*/ = (function () {
+    /*rfix: properties*/
+
+    /*rfix: methods*/
+
+
+    return{
+        /*rfix: returnObj*/
+
+    }
+}());
+

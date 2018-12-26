@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+- { val: auto_id,type: bigint(19),def: ,onoff: ,tn: user },
+- { val: user_full_name,type: varchar(99),def: ,onoff: ,tn: user },
+- { val: salutation_name,type: varchar(60),def: ,onoff: ,tn: user },
+- { val: first_name,type: varchar(100),def: ,onoff: ,tn: user },
+- { val: middle_name,type: varchar(60),def: ,onoff: ,tn: user },
+- { val: last_name,type: varchar(100),def: ,onoff: ,tn: user },
+- { val: transaction_id,type: bigint(19),def: 0,onoff: ,tn: user },
+- { val: user_id,type: bigint(19),def: 0,onoff: ,tn: user },
+- { val: organisation_id,type: bigint(19),def: 0,onoff: ,tn: user },
+- { val: rkey,type: varchar(369),def: ,onoff: ,tn: user },
+- { val: pcdate,type: timestamp,def: CURRENT_TIMESTAMP,onoff: ,tn: user },

@@ -1,0 +1,130 @@
+GeoInTime
+Attendance
+Geo Fenece
+Attendance Management from Field Locations
+	Report to work from anywhere
+	Location Validation on Punch-In & Punch-Out
+	Real-time synchronization of attendance status
+ATTENDANCE MANAGEMENT
+Attendance capture from varied sources
+Geo Mark Attendance Marking feature
+	Our Geo Mark Attendance Marking feature enables your employees to be signed in and signed out the moment they arrive and leave predefined location coordinates. You can set up an unlimited number of location coordinates, such as multiple office locations, on-site client locations, vendor offices, etc. No more worrying about not capturing accurate and real-time attendance of remote, on-site, or mobile employees again - without depending upon third-party attendance hardware systems and their associated costs.
+Mobile app for employees and managers
+Payroll-related information
+	View, upload and update information pertaining to income tax, tax-saving plans, deductions, etc. Also, view payslips, total earnings statements and PF and YTD statements. All from smart phone devices
+Leave Management
+	Your employees and managers can apply for and approve/ reject leaves, respectively, with a single tap on their mobile. They can view leave balances (across all leave types) and holiday details from the app itself. Managers can also view their team members’ leave-related information.
+Help Desk
+LEAVE MANAGEMENT
+Fully customizable leave policies
+	Create multiple leave types
+		Create any number of leave types and define leave policies for each type exclusively: earned leave, sick leave, casual leave, maternity leave, marriage leave, bereavement leave, etc
+	Customize configure leave policies
+		Allows you to configure various types of leave policies like leave granting, leave availing restrictions, week end policies, leave pro rating , leave year end processing etc.
+	Access library of standard policies
+		Choose a policy from our library of standard leave policies, in case you don’t have a leave policy in place
+Holiday lists
+	Holiday lists
+	Create regional or location-based lists
+	Add Restricted Holidays
+	Publish company’s holiday list	
+Minimal leave-related tasks and queries
+	Grant leaves automatically
+	Let employees and managers handle leave requests
+	Focus more on strategic HR tasks
+	Access leave report	
+Attendance capture from varied sources
+	Record real-time attendance
+	var r = '';
+	$('h1,h2,h3,h4').map(function(){
+		r += $(this).text().trim()+'\n';
+	});
+	console.log(r);
+Attendance Management
+	When efficiency and efficacy matter
+	Attendance capture from varied sources
+			Record real-time attendance
+			Capture attendance from the ESS portal
+			Capture attendance from third-party hardware
+	Geo Mark Attendance Marking feature
+			Capture attendance from mobile app
+			Eliminate need for attendance devices
+	Extensive shift management
+			Create shifts and associated policies
+			Assign shifts to employees
+	Attendance Processing
+			View real-time attendance info
+			Configure attendance the way you want it
+			Real-time reports
+	Employee portal: More than an attendance register
+			View complete attendance information
+			Regularize attendance
+	Highly configurable policies
+			Create employee group wise attendance policy
+			Set up actual hour computation logic
+			Create attendance scheme, a one-time activity
+	All-in-one Attendance management software
+Leave Management
+	Fully customizable leave policies
+			Create multiple leave types
+			Customize configure leave policies
+			Access library of standard policies
+	Holiday lists
+			Holiday lists
+			Create regional or location-based lists
+			Add Restricted Holidays
+			Publish company’s holiday list
+	Minimal leave-related tasks and queries
+			Grant leaves automatically
+			Let employees and managers handle leave requests
+			Focus more on strategic HR tasks
+			Access leave reports
+	Leave year-end processing
+			Leave year-end processing need not mean extra work anymore.
+	The best payroll software with a comprehensive leave management system
+
+
+/**/
+Admin
+		Dashboard
+		Company Structure                                        
+		Job Details Setup                                        
+		Qualifications Setup                                        
+		Projects/Client Setup                                        
+		Overtime Administration                                        
+		Employee Custom Fields                                        
+		Company LoansAdmin
+Employees
+		Employees
+		Travel Requests                                        
+		Monitor AttendanceEmployees
+Admin Reports
+		ReportsAdmin Reports
+System
+		Settings
+		Users                                        
+		Manage Modules                                        
+		Manage Permissions                                        
+		Manage Metadata                                        
+		DataSystem
+Payroll
+		Salary
+		Payroll ReportsPayroll
+Personal Information
+		Dashboard
+		Dependents                                        
+		Emergency Contacts                                        
+		Basic Information                                        
+		QualificationsPersonal Information
+Time Management
+		Attendance
+		Time Sheets                                        
+		Overtime Requests                                        
+		ProjectsTime Management
+Travel Management
+		TravelTravel Management
+Finance
+		Salary
+		LoansFinance
+User Reports
+		ReportsUser Reports

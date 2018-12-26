@@ -1,0 +1,57 @@
+rsideBmenu:
+    - {key: 1,pid: 0,val: Dashboard,name: , rcat: ,    order: 1,onoff: 1,icon: fas fa-fw fa-tachometer-alt ,href: ,class: ,id: ,toggle: ,target: ,ghtml:   }
+    - {key: 5,pid: 1,val: Devloup,name: , rcat: h6,    order: 1,onoff: 1,icon:  ,href: ,class: ,id: ,toggle: ,target: ,ghtml:   }
+    - {key: 2,pid: 1,val: Geo In Time,name: , rcat: a,    order: 1,onoff: 1,icon:  ,href: /geo/dashboard,class: ,id: ,toggle: ,target: ,ghtml:   }
+    - {key: 3,pid: 1,val: Geo Fenece,name: , rcat: a,    order: 1,onoff: 1,icon:  ,href: /fenece/dashboard,class: ,id: ,toggle: ,target: ,ghtml:   }
+    - {key: 4,pid: 1,val: Geo Attendance,name: , rcat: a,    order: 1,onoff: 1,icon:  ,href: /atten/dashboard,class: ,id: ,toggle: ,target: ,ghtml:   }
+    - {key: 6,pid: 0,val: Form Test,         name: , rcat: ,    order: 1,onoff: 1,icon: ,href: ,class: ,id: ,toggle: ,target: ,ghtml:   }
+    - {key: 8,pid: 6,val: 'Test Yout Form:',         name: , rcat: h6,    order: 1,onoff: 1,icon: ,href: ,class: ,id: ,toggle: ,target: ,ghtml:  }
+    - {key: 7,pid: 6,val: Role Form,         name: , rcat: a,    order: 1,onoff: 1,icon: ,href: /geo/role_form,class: ,id: ,toggle: ,target: ,ghtml: w3c_boot/frm/espo/role_espo.html }
+    - {key: 0,pid: 0,val: ,         name: , rcat: ,    order: 1,onoff: 1,icon: ,href: ,class: ,id: ,toggle: ,target: ,ghtml:   }
+
+ruserDropdown:
+    - { key: 1, pid: 0, val: Settings,name: , href: ,toggle: ,target: , class: , order: 1, onoff: 1 ,id: ,rcat: a }
+    - { key: 2, pid: 0, val: Activity Log,name: , href: ,toggle: ,target: , class: , order: 1, onoff: 1 ,id: ,rcat: a}
+    - { key: 3, pid: 0, val: ,name: , href: ,toggle: ,target: , class: , order: 1, onoff: 1 ,id: ,rcat: divider}
+    - { key: 4, pid: 0, val: Logout,name: , href: ,toggle: ,target: , class: , order: 1, onoff: 1 ,id: ,rcat: modal}
+    - { key: 0, pid: 0, val: ,name: , href: ,toggle: ,target: , class: , order: 1, onoff: 1 ,id: ,rcat: }
+
+
+revent:
+    - { key: 1,select: ,href: /geo/dashboard,req: ,res: ,cfn: ,carg: ,ebrid: 2,ebrtype: rsideBmenu,onoff: 1 }
+    - { key: 2,select: ,href: /fenece/dashboard,req: ,res: ,cfn: ,carg: ,ebrid: 3,ebrtype: rsideBmenu,onoff: 1 }
+    - { key: 3,select: ,href: /atten/dashboard,req: ,res: ,cfn: ,carg: ,ebrid: 4,ebrtype: rsideBmenu,onoff: 1 }
+    - { key: 0,select: ,href: ,req: ,res: ,cfn: ,carg: ,ebrid: 4,ebrtype: ,onoff: 1 }
+
+rrole:
+    - { key: 2, pid: 0, val: Accounts	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 3, pid: 0, val: Activities	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 4, pid: 0, val: Calendar	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 5, pid: 0, val: Calls	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 6, pid: 0, val: Campaigns	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 7, pid: 0, val: Cases	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 8, pid: 0, val: Contacts	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 9, pid: 0, val: Document Folders	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 10, pid: 0, val: Documents	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 11, pid: 0, val: Email Template Categories	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 12, pid: 0, val: Email Templates	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 13, pid: 0, val: Emails	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 14, pid: 0, val: External Accounts	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 15, pid: 0, val: Import	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 16, pid: 0, val: Knowledge Base	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 17, pid: 0, val: Knowledge Base Categories	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 18, pid: 0, val: Leads	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 19, pid: 0, val: Meetings	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 20, pid: 0, val: Opportunities	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 21, pid: 0, val: Personal Email Accounts	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 22, pid: 0, val: Target Lists	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 23, pid: 0, val: Tasks	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 24, pid: 0, val: Teams	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 25, pid: 0, val: Templates	,name: , order: 1, onoff: 1 ,rcat: }
+    - { key: 26, pid: 0, val: Users	,name: , order: 1, onoff: 1 ,rcat: }
+
+    - { key: 0, pid: 0, val: ,name: , order: 1, onoff: 1 ,rcat: }
+rtest:
+    - { key: 0, pid: 0, val: ,name: , href: ,toggle: ,target: , class: , order: 1, onoff: 1 ,id: ,rcat: }
+
+

@@ -1,0 +1,32 @@
+DELIMITER \$\$
+
+USE \`<!--rvardbName: -->\`\$\$
+
+DROP PROCEDURE IF EXISTS \`i_<!--rvartableName: -->\`\$\$
+
+CREATE DEFINER=\`root\`@\`localhost\` PROCEDURE \`i_<!--rvartableName: -->\`(
+
+<!--rreqvarinPara: -->
+
+
+)
+    READS SQL DATA
+    DETERMINISTIC
+    SQL SECURITY INVOKER
+BEGIN
+
+<!--rreqvarsetDefault: -->
+
+INSERT INTO <!--rvartableName: --> (
+
+<!--rreqvarcnName: -->
+
+)
+ VALUES (
+
+<!--rreqvarcnValue: -->
+
+ );
+ END\$\$
+
+DELIMITER ;

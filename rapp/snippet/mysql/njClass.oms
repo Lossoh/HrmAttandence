@@ -1,0 +1,14 @@
+/*om*/
+
+/**/
+class <!--rvarclassName: className-->{
+    /**/
+    constructor(){
+
+    }
+    /*methods*/
+    <!--rvarmethods: -->
+}
+
+/**/
+module.exports = <!--rvarclassName: -->;

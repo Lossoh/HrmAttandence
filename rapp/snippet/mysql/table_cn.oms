@@ -1,0 +1,11 @@
+SELECT
+*
+FROM information_schema.COLUMNS c
+WHERE c.TABLE_SCHEMA = '<!--rvardbName: geointime-->'
+AND c.TABLE_NAME RLIKE '\\\\b<!--rvartableName: user-->\\\\b'
+AND c.COLUMN_NAME RLIKE ''
+
+
+ORDER BY c.TABLE_NAME
+
+;

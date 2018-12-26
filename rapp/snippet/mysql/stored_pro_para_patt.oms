@@ -1,0 +1,12 @@
+SELECT
+*
+FROM information_schema.PARAMETERS i
+WHERE i.SPECIFIC_SCHEMA = '<!--rvardbName: geointime-->'
+AND i.SPECIFIC_NAME RLIKE '\\\\b<!--rvarspName: -->\\\\b'
+AND i.PARAMETER_NAME RLIKE '<!--rvarparaPatt: -->'
+
+ORDER BY i.SPECIFIC_NAME
+;
+
+
+

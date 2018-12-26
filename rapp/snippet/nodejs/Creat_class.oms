@@ -1,0 +1,16 @@
+/*om*/
+
+
+/**/
+/*rrep: comment*/
+class  RclassName{
+
+    /*rfix: constructor*/
+    constructor(){
+        /*rfix: Property*/
+    }
+    /*rfix: Methodes*/
+
+}
+/**/
+module.exports = RclassName;

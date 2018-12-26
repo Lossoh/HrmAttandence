@@ -1,0 +1,61 @@
+5 Steps to build a REST API in Node.js with MongoDB
+		📄 Table of contents
+REST API?
+What I will use for this introduction
+Development Environment
+Dependencies
+Structure
+Building the API routes
+Set up basics
+Create question routes
+Create answer routes
+Set up error handlers
+Connecting with MongoDB through Mongoose
+Modeling data for the API
+Creating the Schema
+Extend the functionality by sorting and voting
+Connecting the API to the database
+Establish error handling
+Update question routes
+Update answer routes
+Finalizing and testing the API
+Testing
+CORS
+Connecting the Frontend
+Conclusion
+		REST API?
+		What I will use for this introduction
+			Development Environment
+Postman
+			Dependencies
+nodemon
+mongoose
+morgan
+eslint
+			Structure
+		Building the API routes
+			Set up basics
+			Create question routes
+			Create answer routes
+			Set up error handlers
+		Connecting with MongoDB through Mongoose
+			Modeling data for the API
+			Creating the Schema
+			Extend the functionality by sorting and voting
+		Connecting the API to the database
+			Establish error handling
+see docs
+			Update question routes
+			Update answer routes
+		Finalizing and testing the API
+			Testing
+			CORS
+			Connecting the Frontend
+		Conclusion
+LinkedIn
+Github
+Medium
+Twitter
+Steemit
+Hashnode
+
